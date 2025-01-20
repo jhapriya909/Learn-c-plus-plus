@@ -19,8 +19,5 @@ int main()
     }
     else{
         cout<<c<<" is  greatest";
-    }
-
-
-    
+    } 
 }
