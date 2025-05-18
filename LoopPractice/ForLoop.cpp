@@ -1,16 +1,22 @@
-#include<iostream>
+#include <iostream>
+#include <string>
 using namespace std;
+
 int main(){
-    int teacups = 5;
-    cout<<"Enter a tea cups :";
-    cin>>teacups;
+  string response;
 
+  while(true){
+    cout << "Do you want more tea (type 'stop' to exit)?: ";
+    getline(cin, response);
 
-    for(int i = 1; i<=teacups; i++){
-    cout<<"Brewing cups "<<  i <<" of tea......" <<endl;
-
-
+    if(response == "stop"){
+      //exit the loop
+      break;
     }
 
+    cout << "Here is your another cup of tea. \n";
+  }
 
+  cout << "No more tea will be served to you";
+  return 0;
 }
