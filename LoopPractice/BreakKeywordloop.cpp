@@ -3,20 +3,15 @@
 using namespace std;
 
 int main(){
-  string response;
+  string teaTypes[3] = {"lemon tea", "Green tea" , "Black tea"};
 
-  while(true){
-    cout << "Do you want more tea (type 'stop' to exit)?: ";
-    getline(cin, response);
+  for( int i = 0; i<3; i++){
+    if(teaTypes[i] == "Green tea"){
+        cout<<"Skipping the " << teaTypes[i] <<endl;
+        continue;
 
-    if(response == "stop"){
-      //exit the loop
-      break;
     }
+       cout << "Brewing " << teaTypes[i] << "..." << endl;
 
-    cout << "Here is your another cup of tea. \n";
   }
-
-  cout << "No more tea will be served to you";
-  return 0;
 }
