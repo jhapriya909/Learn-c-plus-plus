@@ -9,6 +9,8 @@ int main()
     while(i<n)
     {
      // divide hogya ,not prime
+     cout<<"Prime Number";
+    
 
      if(n%i==0)
      {
