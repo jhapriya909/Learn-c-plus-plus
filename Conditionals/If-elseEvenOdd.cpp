@@ -4,7 +4,7 @@ int main()
 {
     int n;
     cin>>n;
-    cout<<"Enter n :";
+    cout<<"Enter the number:";
     if(n%2==0)
     {
      cout<<"Even number ";
@@ -13,7 +13,6 @@ int main()
     else
     {
          cout<<"Odd number"<<endl;
-         cout<<"wow";
     }
    
 
