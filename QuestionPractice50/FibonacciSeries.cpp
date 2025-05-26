@@ -8,10 +8,10 @@ int main(){
 
     for( int i = 0; i<num; i++){
 
-        cout<<first <<endl;
-        next = first + second;
-        first = second;
-        second = next;
+        cout<<first <<endl; // 0
+        next = first + second; // 0+1 = 1
+        first = second; // update = 1
+        second = next; // 1
 
     }
 
