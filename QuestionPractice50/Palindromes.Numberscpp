@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    int n,r,sum = 0,temp; //4 variables declare 
+
+
+    
+    cout<<"Enter  to check a  number is  palindrome:"<<endl;    //101
+    cin>>n;   //101
+
+    temp = n;    // temp = 101 store 
+
+
+    while(n>0){
+         r = n%10;   //101>0 condition -> true  loop me inter krega
+
+         sum = (sum*10) +r;
+         n = n/10;
+
+
+    }
+     if(temp == sum){
+        cout<<" palindrome number";
+     }
+     else{
+        cout<<" not palindrome number ";
+     }
+
+
+}
